@@ -58,4 +58,23 @@ public class Lista{
 		}
 		return arrayIndice;
 	}
+	public static int[] ordenarIndices(int[] array){
+		int[] novoArray=new int[array.length];
+		for(int iterador=0;iterador<array.length;iterador++){
+			novoArray[iterador]=array[iterador]+1;
+		}
+		return novoArray;
+	}
+
+	public static String retornarElementos(int[] array){
+		String elementos="";
+		if(array.length==0){
+			elementos="O array em questão está vazio e, por isso, não há como exibir os seus elementos.";
+		}else{
+			for(int iterador=0;iterador<array.length;iterador++){
+				elementos+=elementos.length()==0?array[iterador]:", "+array[iterador];
+			}
+		}
+		return elementos;
+	}
 }

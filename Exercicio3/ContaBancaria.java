@@ -1,6 +1,6 @@
-public class ContaBancaria{
-	private double saldo=0;
-	
+abstract class ContaBancaria{
+	protected double saldo;
+
 	public void depositar(){
 		System.out.println("Digite o valor que você deseja depositar:");
 		saldo+=Input.input.nextDouble();
